@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitats - Turisme Sostenible</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="recursos/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mountain-sun"></i>
+                <span>CatSostenible</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inici</a></li>
+                <li><a href="destins.html" class="nav-link"><i class="fas fa-map-marked-alt"></i> Destins</a></li>
+                <li><a href="activitats.html" class="nav-link active"><i class="fas fa-hiking"></i> Activitats</a></li>
+                <li><a href="contacte.html" class="nav-link"><i class="fas fa-envelope"></i> Contacte</a></li>
+                <li><a href="calendari.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="activities-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Activitats Sostenibles</h1>
+            <p class="hero-text">Viu experiències úniques mentre respectes i protegeixes el medi ambient</p>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="category"><i class="fas fa-filter"></i> Categoria</label>
+                <select id="category" class="filter-select">
+                    <option value="all">Totes les categories</option>
+                    <option value="hiking">Senderisme</option>
+                    <option value="biking">Ciclisme</option>
+                    <option value="water">Activitats aquàtiques</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="gastronomy">Gastronomia</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="difficulty"><i class="fas fa-signal"></i> Dificultat</label>
+                <select id="difficulty" class="filter-select">
+                    <option value="all">Totes les dificultats</option>
+                    <option value="beginner">Principiant</option>
+                    <option value="intermediate">Intermedi</option>
+                    <option value="advanced">Avançat</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="duration"><i class="fas fa-clock"></i> Durada</label>
+                <select id="duration" class="filter-select">
+                    <option value="all">Qualsevol durada</option>
+                    <option value="short">Menys de 2 hores</option>
+                    <option value="medium">2-4 hores</option>
+                    <option value="long">Més de 4 hores</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="location"><i class="fas fa-map-marker-alt"></i> Ubicació</label>
+                <select id="location" class="filter-select">
+                    <option value="all">Totes les ubicacions</option>
+                    <option value="costa-brava">Costa Brava</option>
+                    <option value="pirineus">Pirineus</option>
+                    <option value="ebre">Terres de l'Ebre</option>
+                    <option value="central">Catalunya Central</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="activities-grid">
+        <!-- Senderisme Costa Brava -->
+        <article class="activity-card">
+            <div class="activity-image">
+                <img src="recursos/images/senderisme-costa.jpg" alt="Senderisme Costa Brava">
+                <div class="activity-level level-beginner">Principiant</div>
+            </div>
+            <div class="activity-content">
+                <h3>Camí de Ronda - Costa Brava</h3>
+                <p>Ruta costanera per les cales verges de Begur i Palafrugell. Observació de la flora i fauna mediterrània.</p>
+                
+                <div class="activity-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>3-4 hores</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-walking"></i>
+                        <span>8 km</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>Màx. 12 persones</span>
+                    </div>
+                </div>
+
+                <div class="activity-features">
+                    <span class="feature-badge"><i class="fas fa-camera"></i> Vistes panoràmiques</span>
+                    <span class="feature-badge"><i class="fas fa-swimmer"></i> Paradetes per bany</span>
+                    <span class="feature-badge"><i class="fas fa-leaf"></i> Guia local</span>
+                </div>
+
+                <div class="activity-price">25€ / persona</div>
+
+                <div class="booking-section">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Reservar
+                    </button>
+                    <a href="formulari.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Detalls
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Observació d'Aus Delta de l'Ebre -->
+        <article class="activity-card">
+            <div class="activity-image">
+                <img src="recursos/images/observacio-aus.jpg" alt="Observació d'Aus">
+                <div class="activity-level level-beginner">Principiant</div>
+            </div>
+            <div class="activity-content">
+                <h3>Observació d'Aus al Delta</h3>
+                <p>Ruta ornitològica amb guia expert. Observació de flamencs, ànecs i altres aus migratòries.</p>
+                
+                <div class="activity-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>2-3 hores</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-binoculars"></i>
+                        <span>Material inclòs</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>Màx. 8 persones</span>
+                    </div>
+                </div>
+
+                <div class="activity-features">
+                    <span class="feature-badge"><i class="fas fa-binoculars"></i> Prismàtics inclosos</span>
+                    <span class="feature-badge"><i class="fas fa-book"></i> Guia especialitzat</span>
+                    <span class="feature-badge"><i class="fas fa-camera"></i> Fotografia</span>
+                </div>
+
+                <div class="activity-price">35€ / persona</div>
+
+                <div class="booking-section">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Reservar
+                    </button>
+                    <a href="formulari.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Detalls
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Ruta del Cister -->
+        <article class="activity-card">
+            <div class="activity-image">
+                <img src="recursos/images/ruta-cister.jpg" alt="Ruta del Cister">
+                <div class="activity-level level-intermediate">Intermedi</div>
+            </div>
+            <div class="activity-content">
+                <h3>Ruta del Cister en Bicicleta</h3>
+                <p>Recorregut en bicicleta pels tres monestirs cistercencs de la Catalunya Nova.</p>
+                
+                <div class="activity-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>6-7 hores</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-bicycle"></i>
+                        <span>45 km</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>Màx. 10 persones</span>
+                    </div>
+                </div>
+
+                <div class="activity-features">
+                    <span class="feature-badge"><i class="fas fa-bicycle"></i> Bici inclosa</span>
+                    <span class="feature-badge"><i class="fas fa-utensils"></i> Dinar inclòs</span>
+                    <span class="feature-badge"><i class="fas fa-landmark"></i> Visites guiades</span>
+                </div>
+
+                <div class="activity-price">65€ / persona</div>
+
+                <div class="booking-section">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Reservar
+                    </button>
+                    <a href="formulari.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Detalls
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Escalada Pirineus -->
+        <article class="activity-card">
+            <div class="activity-image">
+                <img src="recursos/images/escalada.jpg" alt="Escalada als Pirineus">
+                <div class="activity-level level-advanced">Avançat</div>
+            </div>
+            <div class="activity-content">
+                <h3>Escalada als Pirineus</h3>
+                <p>Iniciació a l'escalada en roca amb monitors certificats. Material de seguretat inclòs.</p>
+                
+                <div class="activity-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>4-5 hores</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-mountain"></i>
+                        <span>Nivell avançat</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>Màx. 6 persones</span>
+                    </div>
+                </div>
+
+                <div class="activity-features">
+                    <span class="feature-badge"><i class="fas fa-helmet-safety"></i> Material inclòs</span>
+                    <span class="feature-badge"><i class="fas fa-user-graduate"></i> Monitor certificat</span>
+                    <span class="feature-badge"><i class="fas fa-shield-alt"></i> Assegurança</span>
+                </div>
+
+                <div class="activity-price">85€ / persona</div>
+
+                <div class="booking-section">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Reservar
+                    </button>
+                    <a href="formulari.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Detalls
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="calendar-section">
+        
+        <div class="weekdays">
+            <div class="weekday">Dg</div>
+            <div class="weekday">Dl</div>
+            <div class="weekday">Dt</div>
+            <div class="weekday">Dc</div>
+            <div class="weekday">Dj</div>
+            <div class="weekday">Dv</div>
+            <div class="weekday">Ds</div>
+        </div>
+        
+        <div class="calendar-grid">
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <a href="calendari.html" class="calendar-day available">3</a>
+            <a href="calendari.html" class="calendar-day available">4</a>
+            <a href="calendari.html" class="calendar-day available">5</a>
+            <div class="calendar-day">6</div>
+            <div class="calendar-day">7</div>
+        </div>
+        </div>
+    </section>
+
+    
+           <!-- Peu de pàgina -->
+ <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4><i class="fas fa-leaf"></i> CatSostenible</h4>
+                <p>Promovent el turisme sostenible a Catalunya des de 2020.</p>
+                <div class="social-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-link"></i> Enllaços Ràpids</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+                    <li><a href="destins.html"><i class="fas fa-map-marked-alt"></i> Destinacions</a></li>
+                    <li><a href="activitats.html"><i class="fas fa-hiking"></i> Activitats</a></li>
+                    <li><a href="calendari.html"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-info-circle"></i> Informació</h4>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> Privacitat</a></li>
+                    <li><i class="fas fa-file-contract"></i> Termes</a></li>
+                    <li><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="contacte.html"><i class="fas fa-envelope"></i> Contacte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone"></i> Contacte</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Barcelona, Catalunya</li>
+                    <li><i class="fas fa-phone"></i> +34 934 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@ecocatalunya.cat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CatSostenible. Tots els drets reservats.</p>
+        </div>
+
+</body>
+</html>

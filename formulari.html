@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - Turisme Sostenible</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="recursos/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mountain-sun"></i>
+                <span>CatSostenible</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inici</a></li>
+                <li><a href="destins.html" class="nav-link active"><i class="fas fa-map-marked-alt"></i> Destins</a></li>
+                <li><a href="activitats.html" class="nav-link"><i class="fas fa-hiking"></i> Activitats</a></li>
+                <li><a href="contacte.html" class="nav-link"><i class="fas fa-envelope"></i> Contacte</a></li>
+                <li><a href="calendari.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="destinations-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Contacte Sostenibles  Catalunya</h1>
+            <p class="hero-text">Sempre estarem disponibles per a la vostra ajuda. Si 
+                necessiteu alguna informació, poseu-vos en contacte amb nosaltres.</p>
+        </div>
+    </section>
+    <form class="contact-form" action="https://formspree.io/f/xrbrvzrq" method="POST">
+    <div class="form-container">
+    <main class="contact-main">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h1>Contacta amb Nosaltres</h1>
+                <p>Estem aquí per ajudar-te a planificar la teva experiència sostenible a Catalunya.</p>
+
+
+            <div class="contact-form-container">
+                <form class="contact-form" action="https://formspree.io/f/xrbrvzrq" method="POST">
+                    <fieldset>
+                        <legend>Informació Personal</legend>
+                        <div class="form-group">
+                            <label for="nom"><i class="fas fa-user"></i> Nom complet *</label>
+                            <input type="text" id="nom" name="nom" required 
+                                   placeholder="Introdueix el teu nom cognom">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="info@email.com"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefon"><i class="fas fa-phone"></i> Telèfon</label>
+                            <input type="tel" id="telefon" name="telefon" 
+                                   placeholder="+34 123 456 789"
+                                   pattern="[+0-9\s\-]+">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>La Teva Consulta</legend>
+                        <div class="form-group">
+                            <label for="assumpte"><i class="fas fa-tag"></i> Assumpte *</label>
+                            <select id="assumpte" name="assumpte" required>
+                                <option value="">Selecciona un assumpte</option>
+                                <option value="informacio">Informació general</option>
+                                <option value="reserva">Reserva d'activitats</option>
+                                <option value="colaboracio">Col·laboració</option>
+                                <option value="altres">Altres</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i> Enviar Missatge
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    </div>
+    </form>
+    </section>
+                   <!-- Peu de pàgina -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4><i class="fas fa-leaf"></i> CatSostenible</h4>
+                <p>Promovent el turisme sostenible a Catalunya des de 2020.</p>
+                <div class="social-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-link"></i> Enllaços Ràpids</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+                    <li><a href="destins.html"><i class="fas fa-map-marked-alt"></i> Destinacions</a></li>
+                    <li><a href="activitats.html"><i class="fas fa-hiking"></i> Activitats</a></li>
+                    <li><a href="calendari.html"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-info-circle"></i> Informació</h4>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> Privacitat</a></li>
+                    <li><i class="fas fa-file-contract"></i> Termes</a></li>
+                    <li><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="contacte.html"><i class="fas fa-envelope"></i> Contacte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone"></i> Contacte</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Barcelona, Catalunya</li>
+                    <li><i class="fas fa-phone"></i> +34 934 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@ecocatalunya.cat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CatSostenible. Tots els drets reservats.</p>
+        </div>
+    </footer>
+</body>
+</html>
