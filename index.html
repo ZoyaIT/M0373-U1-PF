@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turisme Sostenible a Catalunya</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="recursos/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Capçalera -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mountain-sun"></i>
+                <span>CatSostenible</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Inici</a></li>
+                <li><a href="destins.html" class="nav-link"><i class="fas fa-map-marked-alt"></i> Destins</a></li>
+                <li><a href="activitats.html" class="nav-link"><i class="fas fa-hiking"></i> Activitats</a></li>
+                <li><a href="calendari.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+                <li><a href="contacte.html" class="nav-link"><i class="fas fa-envelope"></i> Contacte</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Secció Hero amb Grid -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">Descobreix Catalunya de Forma Sostenible</h1>
+                <p class="hero-text">Viu experiències úniques mentre protegeix el nostre entorn natural i cultural.</p>
+                <div class="hero-buttons">
+                    <a href="destins.html" class="btn btn-primary">Explora Destins</a>
+                    <a href="activitats.html" class="btn btn-secondary">Descobreix Activitats</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="recursos/images/hero.jpg" alt="Paisatge natural de Catalunya" class="hero-img">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Destacats amb Flex -->
+    <section class="featured">
+        <h2 class="section-title">Destins Sostenibles Destacats</h2>
+        <div class="cards-container">
+            <article class="card">
+                <div class="card-image">
+                    <img src="recursos/images/costa-brava.jpg" alt="Costa Brava">
+                    <div class="card-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Costa Brava</h3>
+                    <p>Cales verges i pobles pesquers que mantenen la seva autenticitat.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-leaf"></i> Eco-friendly</span>
+                        <span><i class="fas fa-utensils"></i> Gastronomia local</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="recursos/images/pirineus.jpg" alt="Pirineus">
+                    <div class="card-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Pirineus</h3>
+                    <p>Muntanyes verges i valls preservades de massificació turística.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-tree"></i> Natura verge</span>
+                        <span><i class="fas fa-hiking"></i> Senderisme</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="recursos/images/tarragona.jpg" alt="Tarragona Romana">
+                    <div class="card-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Tarragona Romana</h3>
+                    <p>Patrimoni cultural accessible amb visites responsables.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-landmark"></i> Cultural</span>
+                        <span><i class="fas fa-history"></i> Històric</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Secció Video amb Iframe -->
+    <section class="video-section">
+        <div class="video-container">
+            <h2>Turisme -Guia de viatge de Catalunya-</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="recursos/videos/turisme-sostenible.mp4" 
+                    title="Video sobre turisme sostenible"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peu de pàgina -->
+ <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4><i class="fas fa-leaf"></i> CatSostenible</h4>
+                <p>Promovent el turisme sostenible a Catalunya des de 2020.</p>
+                <div class="social-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-link"></i> Enllaços Ràpids</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+                    <li><a href="destins.html"><i class="fas fa-map-marked-alt"></i> Destinacions</a></li>
+                    <li><a href="activitats.html"><i class="fas fa-hiking"></i> Activitats</a></li>
+                    <li><a href="calendari.html"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-info-circle"></i> Informació</h4>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> Privacitat</a></li>
+                    <li><i class="fas fa-file-contract"></i> Termes</a></li>
+                    <li><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="contacte.html"><i class="fas fa-envelope"></i> Contacte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone"></i> Contacte</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Barcelona, Catalunya</li>
+                    <li><i class="fas fa-phone"></i> +34 934 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@ecocatalunya.cat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CatSostenible. Tots els drets reservats.</p>
+        </div>
+    </footer>
+</body>
+</html>
