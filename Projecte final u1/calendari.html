@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turisme Sostenible a Catalunya</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="recursos/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mountain-sun"></i>
+                <span>CatSostenible</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inici</a></li>
+                <li><a href="destins.html" class="nav-link"><i class="fas fa-map-marked-alt"></i> Destinacions</a></li>
+                <li><a href="activitats.html" class="nav-link"><i class="fas fa-hiking"></i> Activitats</a></li>
+                <li><a href="calendari.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+                <li><a href="contacte.html" class="nav-link"><i class="fas fa-envelope"></i> Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Calendar Section -->
+     <section class="calendar-section">
+        <main class="container"> 
+        <div class="weekdays">
+            <div class="weekday">Dg</div>
+            <div class="weekday">Dl</div>
+            <div class="weekday">Dt</div>
+            <div class="weekday">Dc</div>
+            <div class="weekday">Dj</div>
+            <div class="weekday">Dv</div>
+            <div class="weekday">Ds</div>
+        </div>
+        
+        <div class="calendar-grid">
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <a href="#contact-form-day3" class="calendar-day available">3</a>
+            <a href="#contact-form-day4" class="calendar-day available">4</a>
+            <a href="#contact-form-day5" class="calendar-day available">5</a>
+            <div class="calendar-day">6</div>
+            <div class="calendar-day">7</div>
+        </div>
+    </section>
+        <!-- Contact forms for each available day -->
+        <div class="form-container">
+            <div class="contact-form">
+                <h2>Formulari de Reserva</h2>
+                <div class="selected-date">Data Seleccionada: 3 de Maig, 2024</div>
+                <form action="https://formspree.io/f/xrbrvzrq" method="POST">
+                    <input type="hidden" name="selected_date" value="3 de Maig, 2024">
+                    <div class="form-group">
+                        <label for="name3"><i class="fas fa-user"></i> Nom Complert</label>
+                        <input type="text" id="name3" name="name" required placeholder="Introdueix el teu nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email3"><i class="fas fa-envelope"></i> Adreça de Correu</label>
+                        <input type="email" id="email3" name="email" required placeholder="exemple@correu.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone3"><i class="fas fa-phone"></i> Telèfon</label>
+                        <input type="tel" id="phone3" name="phone" placeholder="+34 123 456 789">
+                    </div>
+                    <div class="form-group">
+                        <label for="activity3"><i class="fas fa-hiking"></i> Activitat</label>
+                        <select id="activity3" name="activity" required>
+                            <option value="">Selecciona una activitat</option>
+                            <option value="senderisme">Senderisme als Pirineus</option>
+                            <option value="bici">Ruta en Bici per l'Empordà</option>
+                            <option value="observacio">Observació d'Aus Delta de l'Ebre</option>
+                            <option value="cultura">Ruta Cultural Sostenible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="participants3"><i class="fas fa-users"></i> Nombre de Participants</label>
+                        <select id="participants3" name="participants" required>
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Persones</option>
+                            <option value="3">3 Persones</option>
+                            <option value="4">4 Persones</option>
+                            <option value="5+">5 o més Persones</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message3"><i class="fas fa-comment"></i> Missatge (Opcional)</label>
+                        <textarea id="message3" name="message" rows="4" placeholder="Alguna preferència o necessitat especial..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i> Confirmar Reserva per al 3 de Maig
+                    </button>
+                </form>
+                <p class="instructions">Et contactarem per confirmar la teva reserva en les properes 24 hores</p>
+                <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> Tornar al Calendari</a>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <div class="contact-form">
+                <h2>Formulari de Reserva</h2>
+                <div class="selected-date">Data Seleccionada: 4 de Maig, 2024</div>
+                <form action="https://formspree.io/f/xrbrvzrq" method="POST">
+                    <input type="hidden" name="selected_date" value="4 de Maig, 2024">
+                    <div class="form-group">
+                        <label for="name4"><i class="fas fa-user"></i> Nom Complert</label>
+                        <input type="text" id="name4" name="name" required placeholder="Introdueix el teu nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email4"><i class="fas fa-envelope"></i> Adreça de Correu</label>
+                        <input type="email" id="email4" name="email" required placeholder="exemple@correu.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone4"><i class="fas fa-phone"></i> Telèfon</label>
+                        <input type="tel" id="phone4" name="phone" placeholder="+34 123 456 789">
+                    </div>
+                    <div class="form-group">
+                        <label for="activity4"><i class="fas fa-hiking"></i> Activitat</label>
+                        <select id="activity4" name="activity" required>
+                            <option value="">Selecciona una activitat</option>
+                            <option value="senderisme">Senderisme als Pirineus</option>
+                            <option value="bici">Ruta en Bici per l'Empordà</option>
+                            <option value="observacio">Observació d'Aus Delta de l'Ebre</option>
+                            <option value="cultura">Ruta Cultural Sostenible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="participants4"><i class="fas fa-users"></i> Nombre de Participants</label>
+                        <select id="participants4" name="participants" required>
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Persones</option>
+                            <option value="3">3 Persones</option>
+                            <option value="4">4 Persones</option>
+                            <option value="5+">5 o més Persones</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message4"><i class="fas fa-comment"></i> Missatge (Opcional)</label>
+                        <textarea id="message4" name="message" rows="4" placeholder="Alguna preferència o necessitat especial..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i> Confirmar Reserva per al 4 de Maig
+                    </button>
+                </form>
+                <p class="instructions">Et contactarem per confirmar la teva reserva en les properes 24 hores</p>
+                <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> Tornar al Calendari</a>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <div class="contact-form">
+                <h2>Formulari de Reserva</h2>
+                <div class="selected-date">Data Seleccionada: 5 de Maig, 2024</div>
+                <form action="https://formspree.io/f/xrbrvzrq" method="POST">
+                    <input type="hidden" name="selected_date" value="5 de Maig, 2024">
+                    <div class="form-group">
+                        <label for="name5"><i class="fas fa-user"></i> Nom Complert</label>
+                        <input type="text" id="name5" name="name" required placeholder="Introdueix el teu nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email5"><i class="fas fa-envelope"></i> Adreça de Correu</label>
+                        <input type="email" id="email5" name="email" required placeholder="exemple@correu.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone5"><i class="fas fa-phone"></i> Telèfon</label>
+                        <input type="tel" id="phone5" name="phone" placeholder="+34 123 456 789">
+                    </div>
+                    <div class="form-group">
+                        <label for="activity5"><i class="fas fa-hiking"></i> Activitat</label>
+                        <select id="activity5" name="activity" required>
+                            <option value="">Selecciona una activitat</option>
+                            <option value="senderisme">Senderisme als Pirineus</option>
+                            <option value="bici">Ruta en Bici per l'Empordà</option>
+                            <option value="observacio">Observació d'Aus Delta de l'Ebre</option>
+                            <option value="cultura">Ruta Cultural Sostenible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="participants5"><i class="fas fa-users"></i> Nombre de Participants</label>
+                        <select id="participants5" name="participants" required>
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Persones</option>
+                            <option value="3">3 Persones</option>
+                            <option value="4">4 Persones</option>
+                            <option value="5+">5 o més Persones</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message5"><i class="fas fa-comment"></i> Missatge (Opcional)</label>
+                        <textarea id="message5" name="message" rows="4" placeholder="Alguna preferència o necessitat especial..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i> Confirmar Reserva per al 5 de Maig
+                    </button>
+                </form>
+                <p class="instructions">Et contactarem per confirmar la teva reserva en les properes 24 hores</p>
+                <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> Tornar al Calendari</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4><i class="fas fa-leaf"></i> CatSostenible</h4>
+                <p>Promovent el turisme sostenible a Catalunya des de 2020.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-link"></i> Enllaços Ràpids</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+                    <li><a href="destins.html"><i class="fas fa-map-marked-alt"></i> Destinacions</a></li>
+                    <li><a href="activitats.html"><i class="fas fa-hiking"></i> Activitats</a></li>
+                    <li><a href="calendari.html"><i class="fas fa-calendar-alt"></i> Reserva</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-info-circle"></i> Informació</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> Privacitat</a></li>
+                    <li><a href="#"><i class="fas fa-file-contract"></i> Termes</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="contacte.html"><i class="fas fa-envelope"></i> Contacte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone"></i> Contacte</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Barcelona, Catalunya</li>
+                    <li><i class="fas fa-phone"></i> +34 934 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@catsostenible.cat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CatSostenible. Tots els drets reservats.</p>
+        </div>
+    </footer>
+</body>
+</html>
